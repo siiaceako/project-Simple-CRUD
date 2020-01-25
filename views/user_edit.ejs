@@ -1,0 +1,29 @@
+<h1> SIMPLE INVENTORY using NodeJS/ MySQL</h1>
+
+
+    <div class ="container">
+       <form action="/update" method="post">
+        <input type="hidden" value="<%= items.id %>" name="id">
+    
+           
+        <div class="form-group">
+            <label for="name>">Name:</label>
+            <input type="text" class="form-control" id="email" placeholder="Enter Item Name" value="<%= items.name %>"name="name" required>
+            </div>
+        <div class="form-group">
+            <label for="qty">Quantity:</label>
+            <input type="text" class="form-control" id="email" placeholder="Enter Quantity" value="<%= items.qty %>"name="qty" required>
+            </div>
+        <div class="form-group">
+            <label for="amount">Amount:</label>
+            <input type="text" class="form-control" id="email" placeholder="Enter Amount" value="<%= items.amount %>"name ="amount" required>
+
+            </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+  
+
+
+
+   

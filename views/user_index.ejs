@@ -1,0 +1,51 @@
+<html>
+    <body>
+        <h1> SIMPLE INVENTORY using NodeJS/ MySQL</h1>
+    
+
+    <div class ="container">
+       <a href= "/add" <button class="btn btn-sm btn-primary">Add Item</a></button>
+        
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                        <th>Item ID</th>
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Amount</th>
+                        <th>Action</th>
+                </tr>
+
+
+            </thead>
+            <tbody>
+                <% items.forEach(function(item){ %>
+                    <tr>
+                        <td><%= item.id %></td>
+                        <td><%= item.name %></td>
+                        <td><%= item.qty %></td>
+                        <td><%= item.amount %></td>
+                        <td>
+                            <a href="edit/<%= item.id %>" class="button btn-sm btn-primary">Edit</a>
+                            <a href="delete/<%= item.id %>"class="button btn-sm btn-danger">Delete</a>
+                        </td>
+
+
+                    </tr>
+
+              <%  }); %>
+
+            </tbody>
+
+
+
+        </table>
+
+    </div>
+   
+
+
+
+
+</body>
+</html>
